@@ -1,0 +1,38 @@
+{
+  "name": "keystone-todo-app",
+  "version": "1.0.0",
+  "description": "a to-do app that's pretty much entry-level",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js",
+    "dev": "keystone"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ctshibas/node-repo.git"
+  },
+  "keywords": [
+    "node",
+    "mongoose",
+    "mongodb",
+    "keystone",
+    "to-do",
+    "list",
+    "node.js"
+  ],
+  "author": "Corneille Tshibasu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ctshibas/node-repo/issues"
+  },
+  "homepage": "https://github.com/ctshibas/node-repo#readme",
+  "dependencies": {
+    "@keystonejs/adapter-mongoose": "^9.0.6",
+    "@keystonejs/app-admin-ui": "^7.3.5",
+    "@keystonejs/app-graphql": "^6.1.2",
+    "@keystonejs/auth-password": "^5.1.14",
+    "@keystonejs/fields": "^17.1.2",
+    "@keystonejs/keystone": "^15.0.0",
+    "@keystonejs/server-side-graphql-client": "^1.1.2"
+  }
+}
