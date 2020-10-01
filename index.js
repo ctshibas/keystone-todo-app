@@ -5,10 +5,13 @@ const { Text } = require('@keystonejs/fields');
 const { AdminUIApp } = require('@keystonejs/app-admin-ui');
 const TodoSchema = require('./lists/Todo.js');
 const UserSchema = require('./lists/Todo.js');
+const dotenv = require('dotenv')
+
+dotenv.config({ path: './config/config.env' }) 
 
 // creating an instance of Keystone with the mongoose adapter to connect project to mongodb
 const keystone = new Keystone({
-  adapter: new MongooseAdapter({ mongoUri: 'mongodb://localhost:27017/keystone-cms-app' }),
+  adapter: new MongooseAdapter({ mongoUri: process.env.MONGO_URI }),
 });
 
 // create a Todo list schema - refer to list

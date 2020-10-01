@@ -33,6 +33,7 @@
     "@keystonejs/auth-password": "^5.1.14",
     "@keystonejs/fields": "^17.1.2",
     "@keystonejs/keystone": "^15.0.0",
-    "@keystonejs/server-side-graphql-client": "^1.1.2"
+    "@keystonejs/server-side-graphql-client": "^1.1.2",
+    "dotenv": "^8.2.0"
   }
 }
