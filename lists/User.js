@@ -1,4 +1,4 @@
-const { Text, Password } = require('@keystonejs/fields');
+const { Text, Password, Relationship } = require('@keystonejs/fields');
 
 module.exports = {
   fields: {
@@ -10,5 +10,9 @@ module.exports = {
       type: Password,
       isRequired: true,
     },
+    tasks: {
+    	type: Relationship,
+	ref: 'Todo',
+    }
   },
 };
