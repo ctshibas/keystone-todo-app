@@ -21,7 +21,7 @@ module.exports = {
     },
     assignee: {
 	type: Relationship,
-	ref: 'User',
+	ref: 'User.tasks',
 	isRequired: true,
     },
   },

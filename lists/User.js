@@ -12,7 +12,8 @@ module.exports = {
     },
     tasks: {
     	type: Relationship,
-	ref: 'Todo',
+	ref: 'Todo.assignee',
+	many: true,
     }
   },
 };
